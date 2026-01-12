@@ -19,3 +19,5 @@ def summarize_text(text):
     else:
         return f"Error: {response.text}"
     
+    # Create a gradio interface
+interface = gr.Interface = 
