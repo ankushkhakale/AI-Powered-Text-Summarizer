@@ -19,7 +19,7 @@ def summarize_text(text):
     else:
         return f"Error: {response.text}"
     
-# Create a gradio interface
+# Created a gradio interface
 interface = gr.Interface(
     fn=summarize_text,
     inputs=gr.Textbox(lines=10, placeholder="Enter text to summarize here="),
@@ -28,6 +28,7 @@ interface = gr.Interface(
     description="Enter a long text and AI will generate a concise summary"
 )
 
-# Launch the interface
+# Launched the interface
 if __name__ == "__main__":
     interface.launch()
+
